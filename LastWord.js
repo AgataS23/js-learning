@@ -13,3 +13,7 @@
 // Constraints:
 // 1 <= s.length <= 104
 // s consists of only English letters and spaces ' '.
+const lengthOfLastWord = function (s) {
+  let lastWord = s.trim().split(" ");
+  return lastWord[lastWord.length - 1].length;
+};
