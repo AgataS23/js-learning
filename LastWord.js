@@ -17,3 +17,6 @@ const lengthOfLastWord = function (s) {
   let lastWord = s.trim().split(" ");
   return lastWord[lastWord.length - 1].length;
 };
+
+// second solution
+const lengthOfLastWord = (s) => s.trim().split(" ").pop().length;
