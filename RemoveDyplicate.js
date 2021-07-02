@@ -12,3 +12,15 @@
 // The number of nodes in the list is in the range [0, 300].
 // -100 <= Node.val <= 100
 // The list is guaranteed to be sorted in ascending order.
+
+var deleteDuplicates = function (head) {
+  let currentList = head;
+  while (currentList !== null && currentList.next !== null) {
+    if (currentList.val == currentList.next.val) {
+      currentList.next = currentList.next.next;
+    } else {
+      currentList = currentList.next;
+    }
+  }
+  return head;
+};
