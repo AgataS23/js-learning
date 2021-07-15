@@ -5,3 +5,22 @@
 
 // input: [12, 3, 'das', 'pol', {}, null]
 // output: [3, 12, 'pol', 'das']
+// solution
+
+function mySort(arr) {
+  const sortedNumbers = [];
+  const sortedStrings = [];
+  arr.map((item) => {
+    if (typeof item === "number") {
+      sortedNumbers.push(item);
+    }
+    if (typeof item === "string") {
+      sortedStrings.push(item);
+    }
+  });
+  return sortedNumbers
+    .sort((a, z) => a - z)
+    .concat(sortedStrings.sort().reverse());
+}
+
+console.log(mySort([5, 12, 3, "das", "pol", "pod", {}, null]));
