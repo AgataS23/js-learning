@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -7,10 +6,10 @@ body {
   background: #000;
 }
 .clock {
-  font-family: "Days One", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   font-size: 120px;
   font-weight: bold;
-  color: rgb(240, 123, 13);
+  color: rgb(38, 199, 5);
   position: fixed;
   top: 50%;
   left: 50%;
